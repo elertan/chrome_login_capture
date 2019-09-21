@@ -84,11 +84,11 @@ impl LoginCaptureBrowser {
                 headless_chrome::browser::tab::RequestInterceptionDecision::Continue
             }),
         )?;
-        let ret = rx.recv().unwrap();
+        let ret = rx.recv()?;
         let result = LoginCaptureBrowserLoginResult {
             response: ret.0,
             headers: ret.1,
-            cookies: tab.get_cookies().unwrap_or_else(|_| panic!("Couldn't unwrap cookies"))
+            cookies: tab.get_cookies()?
         };
 
         Ok(result)
