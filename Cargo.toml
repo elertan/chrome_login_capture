@@ -6,7 +6,7 @@ edition = "2018"
 license = "MIT"
 description = "Opens a controlled chrome instance that allows the controller to capture e.g. login tokens."
 repository = "https://github.com/elertan/chrome_login_capture"
-keywords = ["chrome", "login", "capture", "token", "bypass", "captcha"]
+keywords = ["chrome", "login", "capture", "token", "captcha"]
 readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
